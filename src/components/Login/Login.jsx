@@ -25,7 +25,7 @@ class Login extends Component {
       // Avoid redirects after sign-in.
       signInSuccessWithAuthResult: (authResult, redirectUrl) => {
         console.log("signInSuccessWithAuthResult", authResult, redirectUrl);
-        this.props.history.push("/user/history");
+        this.props.history.push("/user");
         return false;
       }
     }

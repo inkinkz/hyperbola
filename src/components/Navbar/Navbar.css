@@ -1,5 +1,5 @@
 .navbar {
-  box-shadow: 0px 2px 10px rgb(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 5px rgb(0, 0, 0, 0.3);
   width: 100%;
   position: sticky;
   /* position: static; */
@@ -75,7 +75,7 @@
 
 @media (min-width: 769px) {
   .toggle-button {
-    display: none;
+    /* display: none; */
   }
 
   .navbar_logo {

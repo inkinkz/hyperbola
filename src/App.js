@@ -22,6 +22,7 @@ import OrderFlavor from "./components/OrderFlavor/OrderFlavor";
 import OrderTopping from "./components/OrderTopping/OrderTopping";
 import OrderSummary from "./components/OrderSummary/OrderSummary";
 import OrderHistory from "./components/OrderHistory/OrderHistory";
+import UserInfo from "./components/UserInfo/UserInfo";
 import AdminLogin from "./components/AdminLogin/AdminLogin";
 import AdminManage from "./components/AdminManage/AdminManage";
 import Login from "./components/Login/Login";
@@ -32,7 +33,9 @@ class App extends Component {
     super(props);
 
     this.state = {
-      sideDrawerOpened: false
+      sideDrawerOpened: false,
+      name: "",
+      profilePic: ""
     };
 
     // Initialize Firebase
@@ -64,10 +67,11 @@ class App extends Component {
       if (user) {
         localStorage.setItem("user", user.uid);
         console.log(firebase.auth().currentUser);
-        // console.log(firebase.auth().currentUser.email);
-        this.setState({ name: firebase.auth().currentUser.displayName });
+        this.setState({
+          name: firebase.auth().currentUser.displayName,
+          profilePic: firebase.auth().currentUser.photoURL + ""
+        });
       } else {
-        // this.setState({ user: null });
         localStorage.removeItem("user");
         localStorage.removeItem("accountType");
       }
@@ -116,6 +120,17 @@ class App extends Component {
               path="/user/history"
               render={props => (
                 <OrderHistory db={firebase} displayName={this.state.name} />
+              )}
+            />
+            <Route
+              exact
+              path="/user"
+              render={props => (
+                <UserInfo
+                  db={firebase}
+                  displayName={this.state.name}
+                  profilePic={this.state.profilePic}
+                />
               )}
             />
             <Route exact path="/order/flavor" component={OrderFlavor} />

@@ -8,29 +8,18 @@ class OrderHistory extends Component {
     this.state = { redirect: null };
   }
 
-  componentDidMount() {
-    // console.log(this.props.db.auth());
-    // this.props.db.auth().onAuthStateChanged(function(user) {
-    //   if (user) {
-    //     // console.log(user);
-    //     console.log(this.props.db.auth().currentUser.email);
-    //     // User is signed in.
-    //   } else {
-    //     // No user is signed in.
-    //   }
-    // });
-    // console.log(this.props.displayName);
-  }
+  componentDidMount() {}
 
   render() {
-    // var loggedInUser = this.props.db.auth();
-
+    console.log(this.state.profilePic);
     if (this.state.redirect) {
       return <Redirect to={{ pathname: this.state.redirect }} />;
     } else {
       return (
         <div>
-          <div className="welcome-text">Welcome {this.props.displayName}!</div>
+          <div className="welcome-text">
+            {this.props.displayName}'s Order History
+          </div>
         </div>
       );
     }
