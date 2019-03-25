@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./OrderConfirm.css";
 
-class OrderFlavor extends Component {
+class OrderConfirm extends Component {
   render() {
     return (
       <div>
