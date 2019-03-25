@@ -46,13 +46,6 @@
   margin-right: 0.7rem;
 }
 
-.map {
-  margin-left: 5%;
-  margin-bottom: 2rem;
-  width: 90%;
-  height: 30vh;
-}
-
 .info_box {
   /* background: #f3ecf6; */
   background: transparent;
@@ -221,4 +214,15 @@
   .white-text {
     font-size: 1.1rem;
   }
+}
+
+.gmap {
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.55) 0px 1px 5px;
+  /* border: 1px solid purple; */
+  margin-left: 5%;
+  margin-bottom: 2rem;
+  width: 90%;
+  height: 30vh;
 }

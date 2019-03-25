@@ -377,8 +377,11 @@ class Home extends Component {
         <p />
 
         <div className="big-purple-text">Hyperbola Nearby</div>
-        <div className="map">
+        <div className="gmap">
           <GoogleMapReact
+            // bootstrapURLKeys={{
+            //   key: "KEY"
+            // }}
             defaultCenter={this.props.center}
             defaultZoom={this.props.zoom}
           />
