@@ -6,34 +6,25 @@ class UserInfo extends Component {
   constructor(props) {
     super(props);
     this.state = { redirect: null };
+    this.orderHistory = this.orderHistory.bind(this);
   }
 
-  componentDidMount() {
-    // console.log(this.props.db.auth());
-    // this.props.db.auth().onAuthStateChanged(function(user) {
-    //   if (user) {
-    //     // console.log(user);
-    //     console.log(this.props.db.auth().currentUser.email);
-    //     // User is signed in.
-    //   } else {
-    //     // No user is signed in.
-    //   }
-    // });
-    // console.log(this.props.displayName);
+  componentDidMount() {}
+
+  orderHistory() {
+    this.setState({ redirect: "/user/history" });
   }
 
   render() {
-    // var loggedInUser = this.props.db.auth();
-    var x = this.props.profilePic;
-    if (x.includes("facebook.com")) {
-      x += "?height=500";
-    } else if (x.includes("twimg.com")) {
-      x = x.substring(0, x.lastIndexOf("_")) + ".jpg";
-    }
-
     if (this.state.redirect) {
       return <Redirect to={{ pathname: this.state.redirect }} />;
     } else {
+      var x = this.props.profilePic;
+      if (x.includes("facebook.com")) {
+        x += "?height=500";
+      } else if (x.includes("twimg.com")) {
+        x = x.substring(0, x.lastIndexOf("_")) + ".jpg";
+      }
       return (
         <div>
           <div className="welcome-text">Welcome {this.props.displayName}!</div>
@@ -47,6 +38,9 @@ class UserInfo extends Component {
               marginRight: "auto"
             }}
           />
+          <button className="history-button" onClick={this.orderHistory}>
+            Order History
+          </button>
         </div>
       );
     }

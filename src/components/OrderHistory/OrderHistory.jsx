@@ -11,7 +11,6 @@ class OrderHistory extends Component {
   componentDidMount() {}
 
   render() {
-    console.log(this.state.profilePic);
     if (this.state.redirect) {
       return <Redirect to={{ pathname: this.state.redirect }} />;
     } else {
