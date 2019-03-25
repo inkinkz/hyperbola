@@ -2,6 +2,10 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "10.14.2",
+    "npm": "6.4.1"
+  },
   "homepage": "https://inkinkz.github.io/hyperbola-web/",
   "dependencies": {
     "gh-pages": "^2.0.1",
@@ -13,8 +17,7 @@
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.5",
-    "serve": "^10.1.2",
-    "firebase": "^5.9.0"
+    "serve": "^10.1.2"
   },
   "scripts": {
     "dev": "react-scripts start",
@@ -34,5 +37,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "firebase": "^5.9.0"
+  }
 }
