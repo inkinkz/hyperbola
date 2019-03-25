@@ -1,0 +1,19 @@
+.right-text-large {
+  margin-top: -0.5rem;
+  margin-right: 5%;
+  margin-bottom: 0px;
+  text-align: right;
+  font-family: "Nunito", sans-serif;
+  font-size: 2rem;
+  color: #6e3596;
+}
+
+.right-text-small {
+  margin-top: 0.5rem;
+  margin-right: 5%;
+  text-align: right;
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #6e3596;
+}

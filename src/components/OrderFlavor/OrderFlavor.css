@@ -1,0 +1,27 @@
+.header_text {
+  margin-top: 1rem;
+  margin-right: 2%;
+  margin-bottom: 0px;
+  text-align: right;
+  font-family: "Nunito", sans-serif;
+  font-size: 2rem;
+  color: #6e3596;
+}
+
+.header_text-small {
+  margin-right: 2%;
+  text-align: right;
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  color: #6e3596;
+}
+
+.container {
+  margin-left: 4%;
+  width: 92%;
+  height: 600px;
+  background: white;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0px 1px 8px #ccc inset;
+}

@@ -1,0 +1,99 @@
+.font-nunito {
+  font-family: "Nunito", sans-serif;
+}
+
+.errorMessage {
+  font-size: 14px;
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+.purple-button {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background: rgba(102, 60, 145, 0.8);
+  box-shadow: 0px 4px 9px #ccc;
+  -webkit-box-shadow: 0px 4px 9px #ccc;
+  -moz-box-shadow: 0px 4px 9px #ccc;
+  width: 70%;
+  /* margin-left: 60%; */
+  /* margin-top: 1rem; */
+  height: 35px;
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  font-weight: bolder;
+  color: white;
+  border-radius: 20px;
+  border-style: none;
+  cursor: pointer;
+  padding: 0px;
+  text-align: center;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="password"] {
+  width: 65%;
+  padding: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-left: 14%; */
+  /* margin-bottom: 1rem; */
+  font-size: 14px;
+  display: block;
+  border: none;
+  background: whitesmoke;
+  border-radius: 12px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  /* background-color: rgb(110, 53, 150, 0.5); */
+  outline: none;
+}
+
+.text-large {
+  margin-top: 1rem;
+  /* margin-right: 15%; */
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  color: #6e3596;
+}
+
+.text-small {
+  margin-left: 15%;
+  /* text-align: right; */
+  font-size: 1rem;
+  color: #6e3596;
+}
+
+.logo {
+  margin-top: 1.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.container-login {
+  width: 100%;
+}
+
+.errorMessage {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-family: "Nunito", "sans-serif";
+  font-size: 14px;
+  color: red;
+}
+
+.hidden {
+  display: none;
+}

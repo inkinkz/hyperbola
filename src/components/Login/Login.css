@@ -1,0 +1,10 @@
+.text-large {
+  margin-top: 1rem;
+  /* margin-right: 15%; */
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  /* font-weight: 100; */
+  color: #6e3596;
+}
