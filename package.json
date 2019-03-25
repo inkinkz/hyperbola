@@ -1,14 +1,9 @@
 {
-  "name": "client",
-  "version": "0.1.0",
+  "name": "Hyperbola",
+  "version": "1.0.0",
   "private": true,
-  "engines": {
-    "node": "10.14.2",
-    "npm": "6.4.1"
-  },
   "homepage": "https://hyperbola.herokuapp.com/",
   "dependencies": {
-    "gh-pages": "^2.0.1",
     "google-map-react": "^1.1.2",
     "react": "^16.8.1",
     "react-aria-tabpanel": "^4.4.0",
@@ -26,7 +21,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
