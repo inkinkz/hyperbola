@@ -6,7 +6,7 @@
     "node": "10.14.2",
     "npm": "6.4.1"
   },
-  "homepage": "https://inkinkz.github.io/hyperbola-web/",
+  "homepage": "https://hyperbola.herokuapp.com/",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "google-map-react": "^1.1.2",
