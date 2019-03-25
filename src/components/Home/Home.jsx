@@ -324,10 +324,12 @@ class Home extends Component {
 
     const engineering = (
       <div className="faculty-bar" onClick={this.showEngineeing}>
-        <img src={GearIcon} style={{ width: "53px" }} alt="Gear" />
+        <img src={GearIcon} style={{ width: "53px" }} alt="Eng" />
+        {/* <div className="space-between" /> */}
+        <div className="white-text">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Engineering
+        </div>
         <div className="space-between" />
-        <div className="white-text">&nbsp;&nbsp;Engineering</div>
-        <div className="space" />
         <div className="white-text-right">
           {this.state.engNumCurrentQueue} &nbsp; &nbsp; &nbsp; queue
         </div>
@@ -337,10 +339,13 @@ class Home extends Component {
 
     const arts = (
       <div className="faculty-bar" onClick={this.showArts}>
-        <img src={ArtsIcon} style={{ width: "53px" }} alt="Gear" />
+        <img src={ArtsIcon} style={{ width: "53px" }} alt="Arts" />
+        {/* <div className="space-between" /> */}
+        <div className="white-text">
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Arts
+        </div>
         <div className="space-between" />
-        <div className="white-text">Arts</div>
-        <div className="space" />
         <div className="white-text-right">7 &nbsp; &nbsp; &nbsp; queue</div>
         {this.state.showArts ? upArrow : downArrow}
       </div>
@@ -348,10 +353,12 @@ class Home extends Component {
 
     const salaphrakeaw = (
       <div className="faculty-bar" onClick={this.showSalaphrakeaw}>
-        <img src={SalaIcon} style={{ width: "53px" }} alt="Gear" />
+        <img src={SalaIcon} style={{ width: "53px" }} alt="Sala" />
+        {/* <div className="space-between" /> */}
+        <div className="white-text">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phrakeaw
+        </div>
         <div className="space-between" />
-        <div className="white-text">Phrakeaw</div>
-        <div className="space" />
         <div className="white-text-right">10 &nbsp; &nbsp; &nbsp; queue</div>
         {this.state.showSala ? upArrow : downArrow}
       </div>
