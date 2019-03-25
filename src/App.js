@@ -22,6 +22,7 @@ import OrderFlavor from "./components/OrderFlavor/OrderFlavor";
 import OrderTopping from "./components/OrderTopping/OrderTopping";
 import OrderSummary from "./components/OrderSummary/OrderSummary";
 import OrderHistory from "./components/OrderHistory/OrderHistory";
+import OrderConfirm from "./components/OrderConfirm/OrderConfirm";
 import UserInfo from "./components/UserInfo/UserInfo";
 import AdminLogin from "./components/AdminLogin/AdminLogin";
 import AdminManage from "./components/AdminManage/AdminManage";
@@ -136,6 +137,7 @@ class App extends Component {
             <Route exact path="/order/flavor" component={OrderFlavor} />
             <Route exact path="/order/topping" component={OrderTopping} />
             <Route exact path="/order/summary" component={OrderSummary} />
+            <Route exact path="/order/confirm" component={OrderConfirm} />
             <Route
               exact
               path="/admin/login"
